@@ -22,11 +22,11 @@ public class Account {
         return balance;
     }
 
-    public void getDeposit(double money){
+    public void setDeposit(double money){
         balance += money;
     } 
 
-    public void getWithdraw(double money){
+    public void setWithdraw(double money){
         balance -= money;
     } 
 }

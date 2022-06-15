@@ -71,14 +71,14 @@ public class Menu {
                     case "1":
                         System.out.print("\nEnter your money: ");
                         String deposit = sc.nextLine();
-                        acc.getDeposit(Double.parseDouble(deposit));
+                        acc.setDeposit(Double.parseDouble(deposit));
                         System.out.println("Success to deposit");
                         break;
                     case "2":
                         System.out.print("\nEnter your money to withdraw: ");
                         String withdraw = sc.nextLine();
                         if(acc.getBalance()-Double.parseDouble(withdraw) >= 0) {
-                            acc.getWithdraw(Double.parseDouble(withdraw));
+                            acc.setWithdraw(Double.parseDouble(withdraw));
                             System.out.println("Success to withdraw");
                         }else{
                             System.out.println("You don't have enough money");
